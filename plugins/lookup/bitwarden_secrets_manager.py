@@ -123,7 +123,7 @@ class BitwardenSecretsManager(object):
         params = [
             '--color', 'no',
             '--access-token', bws_access_token,
-            'get', 'secret', secret_id
+            'secret', 'get', secret_id
         ]
 
         out, err, rc = self._run_with_retry(params)
